@@ -21,7 +21,28 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of the `index` / `rindex` built-ins of Perl 5 as closely as possible.
+This module tries to mimic the behaviour of the `index` / `rindex` functions of Perl 5 as closely as possible.
+
+ORIGINAL PERL 5 DOCUMENTATION
+=============================
+
+    index STR,SUBSTR,POSITION
+    index STR,SUBSTR
+            The index function searches for one string within another, but
+            without the wildcard-like behavior of a full regular-expression
+            pattern match. It returns the position of the first occurrence of
+            SUBSTR in STR at or after POSITION. If POSITION is omitted, starts
+            searching from the beginning of the string. POSITION before the
+            beginning of the string or after its end is treated as if it were
+            the beginning or the end, respectively. POSITION and the return
+            value are based at zero. If the substring is not found, "index"
+            returns -1.
+
+    rindex STR,SUBSTR,POSITION
+    rindex STR,SUBSTR
+            Works just like index() except that it returns the position of the
+            last occurrence of SUBSTR in STR. If POSITION is specified,
+            returns the last occurrence beginning at or before that position.
 
 AUTHOR
 ======
