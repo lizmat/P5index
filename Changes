@@ -2,6 +2,9 @@ Revision history for P5index
 
 {{$NEXT}}
 
+0.0.5  2019-11-10T14:03:33+01:00
+    - changed Perl 5 to Perl
+
 0.0.4  2018-05-21T15:21:25+02:00
     - Added original Perl 5 documentation
     - Added authority information
