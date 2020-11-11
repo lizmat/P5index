@@ -1,6 +1,6 @@
-use v6.c;
+use v6.*;
 
-unit module P5index:ver<0.0.5>:auth<cpan:ELIZABETH>;
+unit module P5index:ver<0.0.6>:auth<cpan:ELIZABETH>;
 
 sub index(Str() $string, Str() $needle, Int() $position = 0) is export {
     $string.index($needle,0 max $position) // -1
@@ -16,7 +16,7 @@ sub rindex(Str() $string, Str() $needle, Int() $position = $string.chars - 1) is
 
 =head1 NAME
 
-P5index - Implement Perl's index() / rindex() built-ins
+Port of Perl's index() / rindex() built-ins
 
 =head1 SYNOPSIS
 
@@ -32,8 +32,8 @@ P5index - Implement Perl's index() / rindex() built-ins
 
 =head1 DESCRIPTION
 
-This module tries to mimic the behaviour of the C<index> / C<rindex> functions
-of Perl as closely as possible.
+This module tries to mimic the behaviour of Perl's C<index> / C<rindex>
+built-ins as closely as possible in the Raku Programming Language.
 
 =head1 ORIGINAL PERL 5 DOCUMENTATION
 
@@ -64,7 +64,7 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
@@ -72,4 +72,4 @@ This library is free software; you can redistribute it and/or modify it under th
 
 =end pod
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

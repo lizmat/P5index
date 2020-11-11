@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 use P5index;
 
@@ -10,4 +10,4 @@ is index("foofoo","bar"),   -1, 'did we *not* find bar';
 is index("foofoo","foo",1),  3, 'did we find the second foo';
 is index("foofoo","foo",9), -1, 'did we *not* find foo after end';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4

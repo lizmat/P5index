@@ -1,7 +1,7 @@
 NAME
 ====
 
-P5index - Implement Perl's index() / rindex() built-ins
+Port of Perl's index() / rindex() built-ins
 
 SYNOPSIS
 ========
@@ -19,7 +19,7 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-This module tries to mimic the behaviour of the `index` / `rindex` functions of Perl as closely as possible.
+This module tries to mimic the behaviour of Perl's `index` / `rindex` built-ins as closely as possible in the Raku Programming Language.
 
 ORIGINAL PERL 5 DOCUMENTATION
 =============================
@@ -52,7 +52,7 @@ Source can be located at: https://github.com/lizmat/P5index . Comments and Pull 
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2018-2019 Elizabeth Mattijsen
+Copyright 2018-2020 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 

@@ -1,4 +1,4 @@
-use v6.c;
+use v6.*;
 use Test;
 use P5index;
 
@@ -9,4 +9,4 @@ ok !defined(P5index::{'&index'}),  'is &index externally NOT accessible?';
 ok defined(::('&rindex')),         'is &rindex imported?';
 ok !defined(P5index::{'&rindex'}), 'is &rindex externally NOT accessible?';
 
-# vim: ft=perl6 expandtab sw=4
+# vim: expandtab shiftwidth=4
