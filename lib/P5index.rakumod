@@ -1,6 +1,6 @@
 use v6.*;
 
-unit module P5index:ver<0.0.6>:auth<cpan:ELIZABETH>;
+unit module P5index:ver<0.0.7>:auth<zef:lizmat>;
 
 sub index(Str() $string, Str() $needle, Int() $position = 0) is export {
     $string.index($needle,0 max $position) // -1
@@ -64,7 +64,7 @@ Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2018-2020 Elizabeth Mattijsen
+Copyright 2018, 2019, 2020, 2021 Elizabeth Mattijsen
 
 Re-imagined from Perl as part of the CPAN Butterfly Plan.
 
